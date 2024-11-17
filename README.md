@@ -1,28 +1,107 @@
-# awesome-list [![Awesome Lists](https://srv-cdn.himpfen.io/badges/awesome-lists/awesomelists-flat.svg)](https://github.com/awesomelistsio/awesome)
+# Awesome Erlang [![Awesome Lists](https://srv-cdn.himpfen.io/badges/awesome-lists/awesomelists-flat.svg)](https://github.com/awesomelistsio/awesome)
 
 [![Buy Me A Coffee](https://srv-cdn.himpfen.io/badges/buymeacoffee/buymeacoffee-flat.svg)](https://tinyurl.com/2h9aktmd) &nbsp; [![Ko-Fi](https://srv-cdn.himpfen.io/badges/kofi/kofi-flat.svg)](https://tinyurl.com/d4xnrptz) &nbsp; [![PayPal](https://srv-cdn.himpfen.io/badges/paypal/paypal-flat.svg)](https://tinyurl.com/mr22naua) &nbsp; [![Stripe](https://srv-cdn.himpfen.io/badges/stripe/stripe-flat.svg)](https://tinyurl.com/e8ymxdw3)
 
-> A curated list of resources for
+> A curated list of awesome frameworks, libraries, tools, and resources for Erlang programming.
 
 ## Contents
 
-- [Section](#section)
-- [Another Section](#another-section)
+- [Libraries](#libraries)
+  - [Core Libraries](#core-libraries)
+  - [Web Frameworks](#web-frameworks)
+  - [Testing](#testing)
+  - [Database](#database)
+  - [JSON](#json)
+  - [Networking](#networking)
+  - [Concurrency](#concurrency)
+- [Tools](#tools)
+- [Build Tools](#build-tools)
+- [IDEs and Editors](#ides-and-editors)
+- [Learning Resources](#learning-resources)
+- [Books](#books)
+- [Community](#community)
 
-## Section
+## Libraries
 
-About this section. Optional. Keep this short and focus on the list.
+### Core Libraries
 
-- [List item](http://example.com)
-- [List item](http://example.com)
+- [stdlib](https://www.erlang.org/doc/man/stdlib.html) - The standard library of Erlang.
+- [crypto](https://www.erlang.org/doc/man/crypto.html) - Cryptographic functions for Erlang, part of the OTP package.
+- [ssl](https://www.erlang.org/doc/man/ssl.html) - Secure Sockets Layer (SSL) and Transport Layer Security (TLS) support.
 
-## Another Section
+### Web Frameworks
 
-### Subsection
+- [Cowboy](https://ninenines.eu/docs/en/cowboy) - A small, fast, and modular HTTP server for Erlang.
+- [ChicagoBoss](https://github.com/ChicagoBoss/ChicagoBoss) - A powerful web framework inspired by Rails and Django.
+- [Nitrogen](https://nitrogenproject.com/) - A web framework for building dynamic web applications in Erlang.
 
-- [List item](http://example.com)
-- [List item](http://example.com)
+### Testing
 
+- [EUnit](https://www.erlang.org/doc/man/eunit.html) - Erlang's lightweight unit testing framework.
+- [Common Test](https://www.erlang.org/doc/apps/common_test/) - A testing framework for complex, black-box testing scenarios.
+- [Proper](https://github.com/proper-testing/proper) - A property-based testing tool for Erlang, inspired by QuickCheck.
+
+### Database
+
+- [Mnesia](https://www.erlang.org/doc/man/mnesia.html) - A distributed database management system built into Erlang/OTP.
+- [ETS (Erlang Term Storage)](https://www.erlang.org/doc/man/ets.html) - In-memory storage for Erlang terms.
+- [CouchDB](https://couchdb.apache.org/) - A database that uses Erlang and supports multi-master replication.
+
+### JSON
+
+- [jsx](https://github.com/talentdeficit/jsx) - A fast, lightweight JSON library for Erlang.
+- [jiffy](https://github.com/davisp/jiffy) - A JSON parser and encoder for Erlang, written in C.
+- [jsone](https://github.com/sile/jsone) - A pure Erlang JSON library.
+
+### Networking
+
+- [Ranch](https://ninenines.eu/docs/en/ranch) - A socket acceptor pool for TCP protocols.
+- [GenMQTT](https://github.com/benoitc/gen_mqtt) - An Erlang MQTT client library.
+- [Lager](https://github.com/erlang-lager/lager) - A logging framework for Erlang/OTP.
+
+### Concurrency
+
+- [Poolboy](https://github.com/devinus/poolboy) - A small and fast worker pool library for Erlang.
+- [Gun](https://github.com/ninenines/gun) - An HTTP/1.1, HTTP/2, and WebSocket client for Erlang/OTP.
+- [Taskforce](https://github.com/ninenines/taskforce) - A lightweight task processing library for Erlang.
+
+## Tools
+
+- [Rebar3](https://rebar3.org/) - A build tool and package manager for Erlang projects.
+- [Observer](https://www.erlang.org/doc/apps/observer/) - A graphical tool for inspecting Erlang systems in real time.
+- [Dialyzer](https://www.erlang.org/doc/man/dialyzer.html) - A static analysis tool for finding bugs in Erlang code.
+
+## Build Tools
+
+- [Rebar3](https://rebar3.org/) - The most popular build tool and package manager for Erlang.
+- [Mix](https://elixir-lang.org/getting-started/mix-otp/introduction-to-mix.html) - Although primarily for Elixir, Mix can be used with Erlang projects too.
+- [Erlang.mk](https://erlang.mk/) - A build tool for Erlang projects with minimal setup.
+
+## IDEs and Editors
+
+- [IntelliJ IDEA](https://www.jetbrains.com/idea/) - Supports Erlang through the [Erlang Plugin](https://plugins.jetbrains.com/plugin/7409-erlang).
+- [Emacs](https://www.gnu.org/software/emacs/) - Supports Erlang with the [erlang-mode](https://github.com/erlang/otp/tree/master/lib/tools/emacs) package.
+- [Vim](https://www.vim.org/) - Can be customized for Erlang development with [vim-erlang](https://github.com/vim-erlang/vim-erlang-runtime).
+- [VS Code](https://code.visualstudio.com/) - Supports Erlang with the [Erlang LS](https://github.com/erlang-ls/erlang_ls) extension.
+
+## Learning Resources
+
+- [Erlang Documentation](https://www.erlang.org/doc.html) - Official documentation for Erlang/OTP.
+- [Learn You Some Erlang for Great Good!](https://learnyousomeerlang.com/) - A beginner-friendly guide to Erlang.
+- [Erlang Central](https://erlangcentral.org/) - Tutorials, videos, and resources for learning Erlang.
+
+## Books
+
+- *Programming Erlang* by Joe Armstrong - A comprehensive guide to Erlang by one of its creators.
+- *Erlang and OTP in Action* by Martin Logan, Eric Merritt, and Richard Carlsson - A practical guide to building scalable applications with Erlang.
+- *Designing for Scalability with Erlang/OTP* by Francesco Cesarini and Steve Vinoski - A book on designing scalable and maintainable systems with Erlang.
+
+## Community
+
+- [Erlang Forums](https://erlangforums.com/) - An online forum for Erlang developers.
+- [Erlang Slack](https://erlef.org/slack-invite) - Join the Erlang community on Slack for discussions.
+- [Erlang Reddit](https://www.reddit.com/r/erlang/) - A subreddit for Erlang programming discussions.
+- [Erlang Discord](https://discord.gg/erlang) - A Discord server for the Erlang community.
 
 ## Contribute
 
